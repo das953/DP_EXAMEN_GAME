@@ -37,7 +37,12 @@
             <Button  Content="Load">
 
             </Button>
-            <Label Name="LabelPC"  Style="{DynamicResource RoundCornerL }"></Label>
+            <Label Name="LabelPC" Style="{DynamicResource RoundCornerL }">
+                <Label.Background>
+                    <ImageBrush ImageSource="/Resources/Image/img1.jpg"/>
+                </Label.Background>
+                
+            </Label>
         </StackPanel>
         
     </Grid>

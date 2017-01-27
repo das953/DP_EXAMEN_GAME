@@ -24,5 +24,26 @@ namespace Exam
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            App.Current.Shutdown();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
+
+/*
+ * if(hp <=0 && hero.type == peshka && !team.zombie) hero.zombie(); 20% (40-60 / 100)
+ * на кожен раунд є вірогідність "слона" (вбиває 1го ранд перса з 1ї команди) - 1 раз за гру (10%) (45-55/100)
+ * Оля зробить анімацію
+ * team 7 / 7 (List<T>) / (List<T> но чз "ланцюг")
+ * pattern Command
+ * для сейв\лод pattern Memento
+ * юзер обирає юніта на раунд / ПК ланцюг (if next.hp > current.hp current = next)
+ * 
+ */

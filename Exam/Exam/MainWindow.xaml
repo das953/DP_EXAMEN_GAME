@@ -7,12 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Window.Resources>
-        <Style TargetType="Button">
-            <Setter Property="Grid.Column" Value="1"/>
-            <Setter Property="Padding" Value="5"/>
-            <Setter Property="FontSize" Value="25"/>
-            <Setter Property="Margin" Value="5"/>
-        </Style>
+
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/ButtonsTemplate.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
     </Window.Resources>
 
 
@@ -32,9 +34,9 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Button Grid.Row="1" Click="Button_Click_1">New Game</Button>
-        <Button Grid.Row="2">Load Game</Button>
-        <Button Grid.Row="3" Click="Button_Click">Exit</Button>
+        <Button Style="{DynamicResource RoundCorner}" Grid.Row="1" Click="Button_Click_1">New Game</Button>
+        <Button Style="{DynamicResource RoundCorner}" Grid.Row="2">Load Game</Button>
+        <Button Style="{DynamicResource RoundCorner}" Grid.Row="3" Click="Button_Click">Exit</Button>
 
 
     </Grid>

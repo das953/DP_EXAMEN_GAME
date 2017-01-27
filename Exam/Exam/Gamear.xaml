@@ -11,17 +11,14 @@
 
         <ResourceDictionary>
 
+
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/ButtonsTemplate.xaml"/>
                 <ResourceDictionary Source="Resources/LabelTemplate.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
 
-        <Style TargetType="Label">
-            <Setter Property="Width" Value="50"></Setter>
-            <Setter Property="Height" Value="50"></Setter>
 
-        </Style>
 
     </Window.Resources>
     <Grid>
